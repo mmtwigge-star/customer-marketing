@@ -1,33 +1,50 @@
 # customer-marketing
 Customer &amp; Marketing Analytics project analyzing Kaggle’s Customer Personality dataset. Segments customers by value, evaluates campaign responses, spending patterns, and channel usage to generate actionable insights and support marketing decisions.
 
-# Customer & Marketing Analytics
+# Customer & Marketing Analytics Project
 
 ## Project Overview
-This project analyzes Kaggle’s **Customer Personality Analysis / Marketing Campaign** dataset to identify valuable customers, evaluate marketing campaigns, and uncover spending and channel patterns.
+This project analyzes customer behavior and marketing campaign performance to identify the most valuable customers and which campaigns drive the best response. The goal is to provide actionable insights for business decision-making.
 
-## What I’ve Done So Far
+## Data
+- **Dataset:** Marketing Campaign / Customer Personality Analysis (Kaggle)
+- **Contents:** Customer demographics, spending by category, campaign responses, and purchase channels
+- **Data Cleaning:** 
+  - Income column: invalid/empty entries converted to NULL
+  - Rows with NULL income were retained; numeric conversions applied
+  - Spending columns ensured no NULLs (COALESCE to 0)
 
-1. **Dataset Inspection**
-   - Downloaded CSV from Kaggle.
-   - Explored columns in Google Sheets.
-   - Noted issues: missing `Income`, inconsistent `Education` & `Marital_Status`, messy `Dt_Customer` formats.
+## SQL Analysis
+- **Tables / Views created:**
+  - `total_spent_per_customer` → total spend across all product categories
+  - `customer_segments` → High / Medium / Low value segmentation
+  - `campaign_responses_by_segment` → responses by segment per campaign
+  - `avg_spending_by_category` → average spending per category per segment
+  - `channel_usage_by_segment` → web/store/catalog purchase patterns
 
-2. **Data Preparation**
-   - Exported clean CSV from Sheets.
-   - Imported data into SQLite.
-   - Created table `customers` for analysis.
+- **Insights from SQL:**
+  - High-value customers spend most on AcceptedCmp5
+  - Medium and Low-value customers respond more to the latest campaign (`Response`)
+  - Web channel dominates for high-value customers, catalog for medium, store for low
 
-3. **SQL Analysis**
-   - Calculated total spend per customer.
-   - Segmented customers into High / Medium / Low value.
-   - Combined segments with campaign responses.
-   - Analyzed spending by product category.
-   - Analyzed channel usage (Web / Store / Catalog).
+## Power BI Dashboard
+**Overview / KPIs:**
+- Total Customers
+- Total Revenue
+- Average Customer Value
+- Top Segment per Campaign (KPI card)
 
-## Next Steps
-- Build Power BI dashboard with:
-  - Customer segments overview
-  - Campaign performance by segment
-  - Spending by category
-  - Channel usage
+**Visuals:**
+1. **Customer Segments:** High / Medium / Low value
+2. **Campaign Performance:** Responses by campaign, segmented by High/Medium/Low
+3. **Spending by Category:** Visualizing which products drive revenue
+4. **Channel Usage:** Comparing web vs store vs catalog
+
+**Key Insights:**
+- Overall, the latest campaign (`Response`) drives the highest total responses
+- Segment-level differences show High-value customers responded most to AcceptedCmp5
+- Low and Medium segments respond more to the latest campaign, suggesting targeted campaigns by segment can improve ROI
+- Spending patterns differ by segment, highlighting opportunities for tailored marketing
+- Channel usage varies by segment, guiding distribution strategy
+
+## Project Structure
