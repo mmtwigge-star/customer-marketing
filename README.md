@@ -67,7 +67,7 @@ This project analyses customer behaviour and marketing campaign performance to i
 ---
 
 ### Project Structure
-data/                     # Dataset CSV
-sql/analysis.sql           # SQL queries and views
-dashboard/                 # Power BI dashboard image
-README.md                  # Project documentation and insights
+- data/                     # Dataset CSV
+- sql/analysis.sql           # SQL queries and views
+- dashboard/                 # Power BI dashboard image
+- README.md                  # Project documentation and insights
