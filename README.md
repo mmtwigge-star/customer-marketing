@@ -11,11 +11,11 @@ This project analyses customer behaviour and marketing campaign performance to i
 ---
 
 ### Data
-- **Dataset:** Marketing Campaign / Customer Personality Analysis (Kaggle)  
+- **Dataset:** `Customers.csv` from Kaggle Marketing Campaign / Customer Personality Analysis  
 - **Contents:** Customer demographics, spending by category, campaign responses, and purchase channels  
 - **Data Cleaning:**  
   - Income column: invalid or empty entries converted to NULL  
-  - Rows with NULL income were retained; numeric conversions applied  
+  - Rows with NULL income retained; numeric conversions applied in SQL  
   - Spending columns ensured no NULLs (COALESCE to 0)  
 
 ---
@@ -61,13 +61,9 @@ This project analyses customer behaviour and marketing campaign performance to i
   - High → Web 26%, Store 43%, Catalog 30%  
   - Medium → Web 18%, Store 42%, Catalog 30%  
   - Low → Web 36%, Store 48%, Catalog 15%  
-  - **Implication:** Store campaigns work best for Low; Web effective for High; Catalog underperforms for Low  
-- Insights suggest segment-specific campaigns, product promotions, and channel optimisations will improve engagement and ROI
+- **Implication:** Store campaigns are effective for Low; Web campaigns work best for High; Catalog underperforms for Low  
+- Insights suggest segment-specific campaigns, product promotions, and channel optimisations will improve engagement and ROI  
 
 ---
 
 ### Project Structure
-- data/                     # Dataset CSV
-- sql/analysis.sql           # SQL queries and views
-- dashboard/                 # Power BI dashboard image
-- README.md                  # Project documentation and insights
