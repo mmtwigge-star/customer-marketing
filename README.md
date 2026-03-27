@@ -67,3 +67,8 @@ This project analyses customer behaviour and marketing campaign performance to i
 ---
 
 ### Project Structure
+data/ # Original Kaggle dataset CSV
+sql/analysis.sql # SQL queries and views used
+sql/combined.sql # Optional: combined query for reference
+dashboard/Marketing_campaign_dashboard.png # Screenshot of the Power BI dashboard
+README.md # This documentation file
