@@ -37,6 +37,8 @@ This project analyses customer behaviour and marketing campaign performance to i
 
 ### Power BI Dashboard
 
+![Marketing Campaign Dashboard](dashboard/Marketing_campaign_dashboard.png)
+
 **Overview / KPIs:**  
 - Total Customers  
 - Total Revenue  
@@ -60,8 +62,6 @@ This project analyses customer behaviour and marketing campaign performance to i
   - Medium → Web 18%, Store 42%, Catalog 30%  
   - Low → Web 36%, Store 48%, Catalog 15%  
   - **Implication:** Store campaigns work best for Low; Web effective for High; Catalog underperforms for Low  
-- Insights suggest segment-specific campaigns, product promotions, and channel optimisations will improve engagement and ROI  
-
----
+- Insights suggest segment-specific campaigns, product promotions, and channel optimisations will improve engagement and ROI
 
 ### Project Structure
