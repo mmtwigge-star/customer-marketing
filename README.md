@@ -65,3 +65,7 @@ This project analyses customer behaviour and marketing campaign performance to i
 - Insights suggest segment-specific campaigns, product promotions, and channel optimisations will improve engagement and ROI
 
 ### Project Structure
+data/                     # Dataset CSV
+sql/analysis.sql           # SQL queries and views
+dashboard/                 # Power BI dashboard image
+README.md                  # Project documentation and insights
