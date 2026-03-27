@@ -64,6 +64,8 @@ This project analyses customer behaviour and marketing campaign performance to i
   - **Implication:** Store campaigns work best for Low; Web effective for High; Catalog underperforms for Low  
 - Insights suggest segment-specific campaigns, product promotions, and channel optimisations will improve engagement and ROI
 
+---
+
 ### Project Structure
 data/                     # Dataset CSV
 sql/analysis.sql           # SQL queries and views
